@@ -45,6 +45,7 @@ for cols in park.keys():
                 # ex2)
                 if i == '미개방':
                     park[cols][num] = np.nan
+            print("num!", num)
 
 
 # 개방시작시간, 개방종료시간 combine
@@ -82,6 +83,7 @@ for i in park.index:
     except :
         1
     finally:
+        print(i, addr_x, addr_y, park.주차장명[i])
         park['위도'][i] = addr_x
         park['경도'][i] = addr_y
 
@@ -175,4 +177,4 @@ for i in park.index:
 # combined = pd.merge(park, school, how='outer')
 
 # final.csv를 저장
-combined.to_csv('/data/final_data.csv', encoding='utf-8-sig')
+park.to_csv('/data/final_data.csv', encoding='utf-8-sig')
