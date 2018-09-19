@@ -88,4 +88,4 @@ for i in school.index:
         school['위도'][i] = addr_x
         school['경도'][i] = addr_y
 
-school.to_csv('./data/2018_chu_data_free.csv', encoding='utf-8-sig')
+school.to_csv('./data/2018_chu_data_school.csv', encoding='utf-8-sig')
