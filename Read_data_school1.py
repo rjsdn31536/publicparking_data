@@ -8,7 +8,7 @@ from matplotlib import font_manager, rc
 from insert_XY import insertXY
 
 import googlemaps
-gmaps = googlemaps.Client(key='AIzaSyD6kbIPQKIcLsHLwAhttEQApCsUl0_3rIc')
+gmaps = googlemaps.Client(key='AIzaSyCoLfrAJNvN7zqZpqNGby1xYuZTOzkOGf0')
 
 # 자치단체 주차장 현황 data 삽입
 school = pd.read_csv('./data/2018_parking_school_chu.csv')
