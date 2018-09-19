@@ -11,7 +11,7 @@ import googlemaps
 gmaps = googlemaps.Client(key='AIzaSyCoLfrAJNvN7zqZpqNGby1xYuZTOzkOGf0')
 
 # 자치단체 주차장 현황 data 삽입
-park = pd.read_csv('./data/2018_parking_free.csv')
+park = pd.read_csv('./data/2018_parking_free_chu.csv')
 
 # column name을 보기 편하게 변경
 park.rename(columns={"주차장유형 (노상/노외/부설)":"주차장유형",
