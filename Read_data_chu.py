@@ -167,4 +167,4 @@ for cols in school.keys():
 # combined = pd.merge(park, school, how='outer')
 
 # final.csv를 저장
-school.to_csv('/data/final_data_school.csv', encoding='utf-8-sig')
+school.to_csv('final_data_school.csv', encoding='utf-8-sig')
